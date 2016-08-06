@@ -38,7 +38,7 @@ import twitter4j.conf.ConfigurationBuilder;
  */
 public class Authorization extends javax.swing.JFrame {
     
-    // Consumer Keys
+    // Consumer Keys - Insert yours
     private String OAuthCK = "";  // OAuth Consumer Key
     private String OAuthCS = "";  // OAuth Consumer Secret Key
     
