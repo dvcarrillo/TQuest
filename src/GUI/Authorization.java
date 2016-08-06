@@ -38,6 +38,10 @@ import twitter4j.conf.ConfigurationBuilder;
  */
 public class Authorization extends javax.swing.JFrame {
     
+    // Consumer Keys
+    private String OAuthCK = "";  // OAuth Consumer Key
+    private String OAuthCS = "";  // OAuth Consumer Secret Key
+    
     // Configuration file path
     private final String configFilePath = System.getProperty("user.home") + 
         "/tquest_auth.txt";
@@ -67,8 +71,8 @@ public class Authorization extends javax.swing.JFrame {
         // Twitter4J and app configuration
         configBuilder = new ConfigurationBuilder();
         configBuilder.setDebugEnabled(rootPaneCheckingEnabled);
-        configBuilder.setOAuthConsumerKey("ODyIuLnNCOdLd0ih53EOkzgIL");
-        configBuilder.setOAuthConsumerSecret("veLzp1fcfqJs3KNmsw844BBvxCIUceLWIracXSbkNTaXgwjtVJ");
+        configBuilder.setOAuthConsumerKey(OAuthCK);
+        configBuilder.setOAuthConsumerSecret(OAuthCS);
         OAuthTwitter = new TwitterFactory(configBuilder.build()).getInstance();
         try {
             requestToken = OAuthTwitter.getOAuthRequestToken();
