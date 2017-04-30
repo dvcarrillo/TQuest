@@ -1,2 +1,2 @@
 # TQuest
-*Under development...*
+*In development...*
